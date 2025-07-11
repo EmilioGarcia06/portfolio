@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head id="head_contenido">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Vida - Autómata Celular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/JV.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifier&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+
+    <header class="cabeca text-center py-4 bg-primary text-light shadow-sm">
+        <h1 class="display-4 fw-bold mb-2">Juego de la Vida</h1>
+        <h2 class="fs-5 mb-1">Proyecto hecho por:</h2>
+        <h3 >Emilio Josue Garcia Elizarraras</h3>
+    </header>
+
+    <main class="container my-5 flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex justify-content-center mb-4 flex-wrap align-items-start gap-4">
+            <div id="cuadricula" class="cuadricula"></div>
+            <div class="instrucciones bg-secondary text-light p-3 rounded-3 shadow" style="max-width: 300px;">
+            <h4 class="text-center">Instrucciones</h4>
+            <ul class="mt-2">
+                <li>Haz clic en una celda para activarla o desactivarla.</li>
+                <li>Presiona <strong>Autómata Aleatorio</strong> para llenar celdas al azar.</li>
+                <li>Usa <strong>Iniciar</strong> para empezar la simulación.</li>
+                <li>Presiona <strong>Detener</strong> para pausar el juego.</li>
+                <li>Haz clic en <strong>Limpiar</strong> para reiniciar todo.</li>
+                <li>Observa las generaciones en tiempo real.</li>
+            </ul>
+            
+            <h4 class="text-center">Reglas</h4>
+            <ul class="mt-2">
+              <br> <br> >  <li>Si una <strong>celula</strong> esta viva y tiene 2 o 3 vecinas vivas, sobrevive</li>
+              <br> <br>>  <li>Si una <strong>celula</strong>esta muerta y tiene 3 vecinas vivas, nace </li>
+              <br> <br>>  <li>Si una <strong>celula</strong>esta viva y tiene mas de 3 vecinas vivas, muere por sobrepoblacion </li>
+              <br> <br>>  <li>Si todas las demas <strong>celulas</strong> vivas mueren en la proxima generacion, y todas las demas celulas muertas permanecen meuertas</li>
+            </ul>
+    </div>
+
+        </div>
+
+        <div class="botones-container text-center mt-4 p-3 rounded-3 shadow-sm">
+            <div class="d-grid gap-2 d-md-block mb-3">
+                <button id="iniciar" class="btn btn-custom-action mx-1 my-1">Iniciar</button>
+                <button id="detener" class="btn btn-custom-action mx-1 my-1">Detener</button>
+                <button id="limpiar" class="btn btn-custom-action mx-1 my-1">Limpiar</button>
+                <button id="aleatorio" class="btn btn-custom-action mx-1 my-1">Autómata Aleatorio</button>
+                <a href="/index.html"><button id="limpiar" class="btn btn-custom-action mx-1 my-1">Regresar</button></a>
+
+            </div>
+            
+            <div class="mt-3">
+                <label for="gene" class="form-label fs-5 me-2 text-custom-label">Generaciones:</label>
+                <input type="text" id="gene" class="form-control d-inline-block w-auto text-center bg-input-custom border-custom text-custom-input fw-bold" value="0" disabled>
+            </div>
+        </div>
+    </main>
+
+    <footer class="cabeca text-center py-3 bg-primary text-light shadow-sm mt-auto">
+        <h5 class="mb-0 fs-6">Todos los derechos reservados por @Emilio Josue Garcia Elizarraras</h5>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/JV.js"></script>
+
+</body>
+</html>

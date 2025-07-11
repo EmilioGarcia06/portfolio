@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+}
+body{
+    color: aliceblue;
+    background-color:#191244 ;
+    font-family:Arial, Helvetica, sans-serif;
+    place-items: center;
+}
+.cuadricula{
+      display: grid;
+    grid-template-columns: repeat(50, 12px); /* un poco más grande */
+    gap: 1px;
+    justify-content: center; /* centra la cuadricula horizontalmente */
+    margin: 20px auto;
+}
+
+.dead{
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.alive{
+    background-color: white;
+}
+
+.cabeca{
+    background-color:#543553;
+    height: auto;
+    width: 800px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.botones {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#iniciar {
+    background-color: #2281e5;
+    color: white;
+}
+
+#detener {
+    background-color: #543553;
+    color: white;
+}
+
+#limpiar {
+    background-color: #543553;
+    color: white;
+}
+#aleatorio{
+    background-color: #2281e5;
+    color: white;
+}
+
+.encabezado{
+    margin: 2%;
+    max-width: 100%;
+    max-height: 200px;
+    background-color: #1c2833 ;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.container1{
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: #1c2833 ;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.item1{
+    max-height: 300px;
+    max-width: 700px;
+    margin: 2%;
+    text-align: center;
+}
+.item2{
+    max-height: 200px;
+    max-width: 600px;
+    margin: 2%;
+    text-align: center;
+}
+img{
+    border-radius: 8px;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+.color{
+    background-color: #4c67d3;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+button{
+    border-radius: 8px;
+}
+button:hover{
+    transform: scale(1.1);
+    background: #7b8487;
+    transition: transform 0.3s ease;
+    
+}
+li{
+    display: inline;
+}
+
+
+h3{
+    color: black;
+}
+.dead, .alive {
+    border-radius: 2px;
+}
+
+.instrucciones {
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #2c3e50; /* Más oscuro para combinar */
+    border: 1px solid #888;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+.instrucciones ul {
+    padding-left: 20px;
+}
+
+.instrucciones li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
