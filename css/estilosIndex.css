@@ -1,0 +1,30 @@
+.effect{
+    /* Asegúrate de que tenga un tamaño definido o que su contenido lo defina */
+    width: 400px; /* Ejemplo de ancho */
+    margin: 20px; /* Espacio entre proyectos */
+    padding: 15px;
+    background-color: #1e1e1e; /* Color de fondo similar a tu puzzle */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden; /* Para asegurar que el escalado no se salga de los límites si hay bordes o sombras */
+
+    /* Agrega una transición para que el efecto sea suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.effect:hover {
+    transform: scale(1.05); /* Hace el elemento 5% más grande */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Opcional: hace la sombra más pronunciada */
+}
+
+.effect2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Transición para la imagen */
+}
+
+.effect2:hover img {
+    transform: scale(1.02); /* Escala la imagen un poco menos que el contenedor */
+}

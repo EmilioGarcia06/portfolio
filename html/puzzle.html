@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Puzzle 8 - A*</title>
+ <link rel="stylesheet" href="/CSS/puzzle.css" />
+</head>
+<body>
+ <header class="encabezado">
+  <h1>Puzzle 8 - A*</h1>
+  <h2>Proyecto hecho por:</h2>
+  <h3>Emilio Josue Garcia Elizarraras</h3>
+ </header>
+   <div class="botones">
+        <button id="resolver">Resolver</button>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+
+ <main class="principal">
+  <section class="contenedor-grid">
+        <div class="puzzle-area">
+            <h3>Estado Inicial</h3>
+       <div id="puzzle-inicial" class="puzzle-grid"></div>
+       <div class="inputs">
+          <label for="configuracion-inicial">Inicial:</label>
+          <input type="text" id="configuracion-inicial" value="1,2,3,4,0,5,6,7,8">
+       </div>
+     </div>
+
+             <div class="puzzle-area">
+            <h3>Estado Meta</h3>
+       <div id="puzzle-meta-estatico" class="puzzle-grid"></div>
+       <div class="inputs">
+          <label for="configuracion-meta">Meta:</label>
+          <input type="text" id="configuracion-meta" value="1,2,3,4,5,6,7,8,0">
+       </div>
+     </div>
+
+           <aside class="instrucciones">
+    <h3>Instrucciones</h3>
+    <p>Ingresa una configuración inicial y una configuración meta (separadas por comas).</p>
+    <p>Puedes mover las fichas del <strong>Estado Inicial</strong> haciendo clic en ellas si están adyacentes al espacio vacío.</p>
+    <p>Presiona <strong>Resolver</strong> para ejecutar el algoritmo A* y ver la solución.</p>
+    <p>Presiona <strong>Reiniciar</strong> para limpiar los tableros y cargar los estados predeterminados.</p>
+        <p><strong>Ejemplo de Meta Resoluble:</strong> 1,2,3,4,5,6,7,8,0</p>
+   </aside>
+  </section>
+
+  
+
+  
+ </main>
+
+ <footer class="pie">
+  <p>Todos los derechos reservados por @Emilio Josue Garcia Elizarraras</p>
+ </footer>
+
+ <script src="/js/puzzle.js"></script>
+</body>
+</html>

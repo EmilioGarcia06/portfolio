@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Nombre - Mi Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilosIndex.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body class="bg-dark text-light">
@@ -68,37 +68,59 @@
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-bold text-primary">Mi Portfolio</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 project-card led-border">
-                        <img src="img/R.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
+
+            <!-- =====jUEGO DE LA VIDA  -->
+             
+            <div class="col">
+                <div class="effect">
+                    <div class="effec2">
+                        <div class="card h-100 project-card led-border">
+                            <img src="img/R.png" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
                             <h5 class="card-title text-primary">Juego de la vida de John Conway </h5>
                             <p class="card-text">The Game of Life, creado por el matemático John Horton Conway, se llevo a cabo con  tecnologias como HTML, CSS  y JS </p>
                             <a href="/html/JV.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank" class="proyect">Ver Proyecto</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 project-card led-border">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Pagina Web sobre un hotel  </h5>
-                            <p class="card-text">Se desarrolló una página web para un hotel, el proyecto fue construido con HTML5 para la estructura, CSS para el diseño visual, JavaScript para la interactividad, y Firebase como servicio backend para la autenticación y almacenamiento de datos..</p>
-                            <a href="https://dbhotel.netlify.app/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Ver Proyecto</a>
+            </div>
+
+                <!-- ===== PAGINA SOBRE EL HOTEL ===== -->
+            <div class="col">
+                <div class="effect">
+                    <div class="effec2">
+                       <div class="card h-100 project-card led-border">
+                            <img src="/img/Captura de pantalla 2025-07-27 212456.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Pagina Web sobre un hotel  </h5>
+                                <p class="card-text">Se creó una página web dinámica sobre un hotel, utilizando HTML5 para la estructura y CSS para un diseño atractivo.
+                                                La interactividad y diferentes funciones fueron implementadas con JavaScript, mejorando la experiencia del usuario.
+                                                Firebase se integró como backend, y gestión de datos eficiente.</p>
+                                <a href="https://dbhotel.netlify.app/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Ver Proyecto</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 project-card led-border">
-                        <img src="img/project3.jpg" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Nombre del Proyecto 3</h5>
-                            <p class="card-text">Un tercer ejemplo de tu trabajo, mostrando tu versatilidad.</p>
-                            <a href="#" class="btn btn-outline-light btn-sm" target="_blank">Ver Proyecto</a>
+            </div>
+                <!-- =====jUEGO DE 3X3 PUZZLE -->
+            <div class="col">
+                <div class="effect">
+                    <div class="effec2">
+                        <div class="card h-100 project-card led-border">
+                            <img src="img/3x3.jpg" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Puzzle de 3 x 3 </h5>
+                                <p class="card-text">Este proyecto implementa el Puzzle de 8, un rompecabezas 3x3 resuelto mediante el algoritmo de búsqueda A*.
+                                                La aplicación interactiva permite al usuario definir estados inicial y meta, validando su resolubilidad.
+                                                Utiliza la heurística de distancia de Manhattan para encontrar la solución óptima.
+                                                Demuestra la aplicación de IA para resolver problemas complejos de manera eficiente.</p>
+                                <a href="/html/puzzle.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Ver Proyecto</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-        </div>
+            </div>
     </section>
 
     <section id="skills" class="py-5 bg-dark-secondary">
@@ -138,6 +160,7 @@
 
     <section id="experience" class="py-5 bg-dark">
         <div class="container">
+
             <h2 class="text-center mb-5 display-4 fw-bold text-primary">Experiencia & Educación</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
@@ -162,6 +185,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--===== UNIVERSIDAD===== -->
             <div class="col-md-6 mb-4">
                 <h4 class="text-primary">Educación</h4>
                 <div class="card mb-3 led-border-small">
@@ -172,6 +197,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Preparatiora -->
             <div class="col-md-6 mb-4">
                 <div class="card mb-3 led-border-small">
                     <div class="card-body">
